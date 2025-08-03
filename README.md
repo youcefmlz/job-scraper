@@ -90,7 +90,7 @@ CAREERBUILDER_ENABLED=false
 
 ### 5. Run the Application
 
-**Option 1: Using the run script (Recommended)**
+**Option 1: Using the run script**
 ```bash
 python run.py
 ```
@@ -314,7 +314,7 @@ To add support for new job sites:
 ### Email Templates
 Customize email notifications by modifying the HTML templates in `NotificationService`.
 
-### Database Migrations
+<!-- ### Database Migrations
 For production, use Alembic for database migrations:
 
 ```bash
@@ -326,9 +326,9 @@ alembic revision --autogenerate -m "Add new table"
 
 # Apply migrations
 alembic upgrade head
-```
+``` -->
 
-## Monitoring and Logging
+<!-- ## Monitoring and Logging
 
 The application includes comprehensive logging:
 - Scraping performance metrics
@@ -340,9 +340,9 @@ Check logs for:
 - Scraping success/failure rates
 - Database performance
 - Email delivery status
-- System health metrics
+- System health metrics -->
 
-## Production Deployment
+<!-- ## Production Deployment
 
 ### Using Docker
 
@@ -384,33 +384,9 @@ services:
 
 volumes:
   postgres_data:
-```
+``` -->
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ## License
 
 This project is licensed under the MIT License.
-
-## Support
-
-For issues and questions:
-1. Check the API documentation at `/docs`
-2. Review the logs for error messages
-3. Open an issue on GitHub
-
-## Roadmap
-
-- [ ] Web interface for job management
-- [ ] Advanced filtering and search
-- [ ] Resume parsing and matching
-- [ ] Application tracking
-- [ ] Slack/Discord notifications
-- [ ] Mobile app
-- [ ] Machine learning job recommendations
